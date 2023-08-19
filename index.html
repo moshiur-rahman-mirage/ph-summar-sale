@@ -41,7 +41,7 @@
         <h1 class="font-semibold text-3xl lg:text-xl text-center lg:text-left md:text-center">Kitchenware</h1>
         <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-3">
             <!-- First Card -->
-            <div class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none">
+            <div id="kitchen-1" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none" onclick="cardClicked('kitchen-1')">
                 <figure class="px-10 pt-10 bg-gray-200 h-52">
                     <img src="/images/prod1.png" alt="Shoes" class="pb-2" />
                 </figure>
@@ -55,12 +55,12 @@
                     </div>
                     <h2 class="card-title">K. Accessories</h2>
                     <div class="card-actions">
-                       <p class="text-gray-400">39.00 Tk</p>
+                       <p class="text-gray-400"><span class="rate">33.00</span> Tk</p>
                     </div>
                 </div>
             </div>
             <!-- Second Card -->
-            <div class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none">
+            <div id="kitchen-2" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none" onclick="cardClicked('kitchen-2')">
                 <figure class="px-10 pt-10 bg-gray-200 h-52">
                     <img src="/images/prod2.png" alt="Shoes" class="pb-2" />
                 </figure>
@@ -74,12 +74,12 @@
                     </div>
                     <h2 class="card-title">K. Accessories</h2>
                     <div class="card-actions">
-                       <p class="text-gray-400">25.00 Tk</p>
+                       <p class="text-gray-400"><span class="rate">49.00</span> Tk</p>
                     </div>
                 </div>
             </div>
             <!-- Third Card -->
-            <div class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none">
+            <div id="kitchen-3" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none"  onclick="cardClicked('kitchen-3')">
                 <figure class="px-10 pt-10 bg-gray-200 h-52">
                     <img src="/images/prod3.png" alt="Shoes" class="pb-2" />
                 </figure>
@@ -93,29 +93,29 @@
                     </div>
                     <h2 class="card-title">Home cooker</h2>
                     <div class="card-actions">
-                       <p class="text-gray-400">49.00 Tk</p>
+                       <p class="text-gray-400"><span class="rate">29.00</span> Tk</p>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-base-100 lg:row-span-2 md:row-span-2 row-span-1 rounded-lg hidden lg:block p-2 ">
+            <div class="bg-base-100 lg:row-span-3 md:row-span-3 row-span-3 rounded-lg hidden lg:block p-2 ">
                 <div class="rounded-lg ">
                     <h1 class="font-bold mb-4">Have Coupon?</h1>
-                    <input type="text" placeholder="Coupon Code" class="input input-bordered h-9 w-8/12 max-w-xs rounded-e-none" />
-                    <button class="bg-[#E527B2]  text-white rounded-s-none h-9 ml-[-5px] w-2/6 rounded-lg">Apply</button>
+                    <input id="couponcode1" type="text" placeholder="Coupon Code" class="input input-bordered h-9 w-8/12 max-w-xs rounded-e-none"/>
+                    <button id="coupon1" class="bg-[#E527B2]  text-white rounded-s-none h-9 ml-[-5px] w-2/6 rounded-lg">Apply</button>
                     <div class="text-xl">
-                    <ol class="list-decimal list-inside p-3">
+                    <ol class="list-decimal list-inside p-3 list" id="list">
                         <li>Home Cooker</li>
                         <li>Sports cates</li>
                         <li>Home Cooker</li>
                     </ol>
                     <div class="p-3">
-                        <p>Total Price:<span id="total-price" class="text-gray-400"> 908.99</span></p>
-                        <p>Discount:<span id="discount"  class="text-gray-400"> 908.99</span></p>
-                        <p>Total:<span id="grand-total"  class="text-gray-400"> 908.99</span></p>
+                        <p>Total Price:<span id="total-price" class="text-gray-400">0.00</span></p>
+                        <p>Discount:<span id="discount"  class="text-gray-400">0.00</span></p>
+                        <p>Total:<span id="grand-total"  class="text-gray-400">0.00</span></p>
                     </div>
                   </div>
-                  <button class="bg-[#E527B2]  text-white  h-9 ml-[-5px] w-full rounded-lg">Make Payment</button>
+                  <button id="payment1" class="bg-[#E527B2]  text-white  h-9 ml-[-5px] w-full rounded-lg">Make Payment</button>
                 </div>
             </div>
        
@@ -124,7 +124,7 @@
 
 
                 <!-- First Card -->
-                <div class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none">
+                <div id="sports-1" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none"  onclick="cardClicked('sports-1')">
                     <figure class="px-10 pt-10 bg-gray-200 h-52">
                         <img src="/images/prod4.png" alt="Shoes" class="pb-2" />
                     </figure>
@@ -138,12 +138,12 @@
                         </div>
                         <h2 class="card-title">Sports back cap</h2>
                         <div class="card-actions">
-                           <p class="text-gray-400">39.00 Tk</p>
+                           <p class="text-gray-400"><span class="rate">44.00</span> Tk</p>
                         </div>
                     </div>
                 </div>
                 <!-- Second Card -->
-                <div class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none">
+                <div id="sports-2" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none"  onclick="cardClicked('sports-2')">
                     <figure class="px-10 pt-10 bg-gray-200 h-52">
                         <img src="/images/prod5.png" alt="Shoes" class="pb-2" />
                     </figure>
@@ -157,12 +157,12 @@
                         </div>
                         <h2 class="card-title">Full Jersey set</h2>
                         <div class="card-actions">
-                           <p class="text-gray-400">39.00 Tk</p>
+                           <p class="text-gray-400"><span class="rate">75.00</span> Tk</p>
                         </div>
                     </div>
                 </div>
                 <!-- Third Card -->
-                <div class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none">
+                <div id="sports-3" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none" onclick="cardClicked('sports-3')">
                     <figure class="px-10 pt-10 bg-gray-200 h-52">
                         <img src="/images/prod6.png" alt="Shoes" class="pb-2" />
                     </figure>
@@ -176,20 +176,20 @@
                         </div>
                         <h2 class="card-title">Sports cates</h2>
                         <div class="card-actions">
-                           <p class="text-gray-400">39.00 Tk</p>
+                           <p class="text-gray-400"><span class="rate">43.00</span> Tk</p>
                         </div>
                     </div>
                 </div>
 
 
 
-                <div class="bg-base-100 row-span-1 rounded-lg block lg:hidden md:hidden">
+                <div class="bg-base-100 row-span-1 rounded-lg block lg:hidden md:hidden mx-3">
                     <div class="rounded-lg ">
                         <h1 class="font-bold mb-4">Have Coupon?</h1>
                         <input type="text" placeholder="Coupon Code" class="input input-bordered h-9 w-8/12 max-w-xs rounded-e-none" />
-                        <button class="bg-[#E527B2]  text-white rounded-s-none h-9 ml-[-5px] w-2/6 rounded-lg">Apply</button>
+                        <button id="coupon2" class="bg-[#E527B2]  text-white rounded-s-none h-9 ml-[-5px] w-2/6 rounded-lg">Apply</button>
                         <div class="text-xl">
-                        <ol class="list-decimal list-inside p-3">
+                        <ol class="list-decimal list-inside p-3 list" id="list">
                             <li>Home Cooker</li>
                             <li>Sports cates</li>
                             <li>Home Cooker</li>
@@ -200,7 +200,7 @@
                             <p>Total:<span id="grand-total"  class="text-gray-400"> 908.99</span></p>
                         </div>
                       </div>
-                      <button class="bg-[#E527B2]  text-white h-9 ml-[-5px] w-full rounded-lg">Make Payment</button>
+                      <button id="payment2" class="bg-[#E527B2]  text-white h-9 ml-[-5px] w-full rounded-lg">Make Payment</button>
                     </div>
                 </div>
 
