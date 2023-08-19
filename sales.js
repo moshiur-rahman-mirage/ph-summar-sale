@@ -23,6 +23,13 @@ document.getElementById('coupon1').addEventListener('click',function(){
 })
 
 
+function resetAll(){
+    setTextFieldValueFromId('total-price',0.00);
+    setTextFieldValueFromId('grand-total',0.00);
+    setTextFieldValueFromId('discount',0.00);
+}
+
+
 function cardClicked(element){
     const itemName=document.getElementById(element);
     const name=itemName.children[1].children[1].innerHTML;

@@ -115,7 +115,23 @@
                         <p>Total:<span id="grand-total"  class="text-gray-400">0.00</span></p>
                     </div>
                   </div>
-                  <button id="payment1" class="bg-[#E527B2]  text-white  h-9 ml-[-5px] w-full rounded-lg">Make Payment</button>
+                  <button id="payment1" class="bg-[#E527B2]  text-white  h-9 ml-[-5px] w-full rounded-lg" onclick="my_modal_1.showModal()">Make Payment</button>
+
+                    
+<dialog id="my_modal_1" class="modal">
+  <form method="dialog" class="modal-box flex flex-col items-center justify-center">
+    <img src="images/congo.png"/>
+    <h3 class="font-bold text-lg">Congratulations!</h3>
+    <p class="py-4">You Make the Payment</p>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn" onclick="resetAll()">Close</button>
+    </div>
+  </form>
+</dialog>
+
+
+
                 </div>
             </div>
        
