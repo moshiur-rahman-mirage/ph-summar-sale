@@ -1,6 +1,7 @@
 
 
 
+
 document.getElementById('full-body').addEventListener('click',function(){
     const coupon = document.getElementById('coupon1');
     const payment = document.getElementById('payment1');
@@ -38,6 +39,8 @@ function resetAll() {
     setTextFieldValueFromId('grand-total', 0.00);
     setTextFieldValueFromId('discount', 0.00);
     setTextFieldValueFromId('list','');
+    document.querySelector('#payment1').disabled = true;
+document.querySelector('#coupon1').disabled = true;
 }
 
 
