@@ -25,7 +25,7 @@
                         class="text-[#E527B2]">20% off</span></h1>
                 <div class="flex gap-1 items-center">
                     <p class="text-xs text-[#111111]">Use Promo Code</p>
-                    <p class="bg-[#E527B2] text-white rounded-s w-20 text-center">SELL200</p>
+                    <button class="bg-[#E527B2] text-white rounded-sm w-20 text-center">SELL200</button>
                 </div>
             </div>
 
@@ -37,202 +37,186 @@
     </section>
 
 
-    <section class=" lg:px-24 lg:py-5 bg-gray-100">
+    <section class=" lg:px-24 lg:py-5 bg-gray-100" id="full-body">
         <h1 class="font-semibold text-3xl lg:text-xl text-center lg:text-left md:text-center">Kitchenware</h1>
-        <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-3">
-            <!-- First Card -->
-            <div id="kitchen-1" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none" onclick="cardClicked('kitchen-1')">
-                <figure class="px-10 pt-10 bg-gray-200 h-52">
-                    <img src="/images/prod1.png" alt="Shoes" class="pb-2" />
-                </figure>
-                <div class="card-body items-center text-center">
-                    <div>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                        <i class="fa-solid fa-star text-yellow-400"></i>
-                    </div>
-                    <h2 class="card-title">K. Accessories</h2>
-                    <div class="card-actions">
-                       <p class="text-gray-400"><span class="rate">33.00</span> Tk</p>
-                    </div>
+<div class="flex justify-center  md:justify-center flex-col lg:flex-row md:flex-row gap-5">
+    <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-5">
+        <!-- First Card -->
+        <div id="kitchen-1" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none cursor-pointer"
+            onclick="cardClicked('kitchen-1')">
+            <figure class="px-10 pt-10 bg-gray-200 h-52">
+                <img src="/images/prod1.png" alt="Shoes" class="pb-2" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <div>
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                </div>
+                <h2 class="card-title">K. Accessories</h2>
+                <div class="card-actions">
+                    <p class="text-gray-400"><span class="rate">33.00</span> Tk</p>
                 </div>
             </div>
-            <!-- Second Card -->
-            <div id="kitchen-2" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none" onclick="cardClicked('kitchen-2')">
-                <figure class="px-10 pt-10 bg-gray-200 h-52">
-                    <img src="/images/prod2.png" alt="Shoes" class="pb-2" />
-                </figure>
-                <div class="card-body items-center text-center">
-                    <div>
-                        <i class="fa-regular fa-star text-yellow-400"></i>
-                        <i class="fa-regular fa-star text-yellow-400"></i>
-                        <i class="fa-regular fa-star text-yellow-400"></i>
-                        <i class="fa-regular fa-star text-yellow-400"></i>
-                        <i class="fa-regular fa-star text-yellow-400"></i>
-                    </div>
-                    <h2 class="card-title">K. Accessories</h2>
-                    <div class="card-actions">
-                       <p class="text-gray-400"><span class="rate">49.00</span> Tk</p>
-                    </div>
+        </div>
+        <!-- Second Card -->
+        <div id="kitchen-2" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none cursor-pointer"
+            onclick="cardClicked('kitchen-2')">
+            <figure class="px-10 pt-10 bg-gray-200 h-52">
+                <img src="/images/prod2.png" alt="Shoes" class="pb-2" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <div>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                </div>
+                <h2 class="card-title">K. Accessories</h2>
+                <div class="card-actions">
+                    <p class="text-gray-400"><span class="rate">49.00</span> Tk</p>
                 </div>
             </div>
-            <!-- Third Card -->
-            <div id="kitchen-3" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none"  onclick="cardClicked('kitchen-3')">
-                <figure class="px-10 pt-10 bg-gray-200 h-52">
-                    <img src="/images/prod3.png" alt="Shoes" class="pb-2" />
-                </figure>
-                <div class="card-body items-center text-center">
-                    <div>
-                        <i class="fa-regular fa-star text-yellow-400"></i>
-                        <i class="fa-regular fa-star text-yellow-400"></i>
-                        <i class="fa-regular fa-star text-yellow-400"></i>
-                        <i class="fa-regular fa-star text-yellow-400"></i>
-                        <i class="fa-regular fa-star text-yellow-400"></i>
-                    </div>
-                    <h2 class="card-title">Home cooker</h2>
-                    <div class="card-actions">
-                       <p class="text-gray-400"><span class="rate">29.00</span> Tk</p>
-                    </div>
+        </div>
+        <!-- Third Card -->
+        <div id="kitchen-3" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none cursor-pointer"
+            onclick="cardClicked('kitchen-3')">
+            <figure class="px-10 pt-10 bg-gray-200 h-52">
+                <img src="/images/prod3.png" alt="Shoes" class="pb-2" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <div>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                </div>
+                <h2 class="card-title">Home cooker</h2>
+                <div class="card-actions">
+                    <p class="text-gray-400"><span class="rate">29.00</span> Tk</p>
                 </div>
             </div>
+        </div>
 
-            <div class="bg-base-100 lg:row-span-3 md:row-span-3 row-span-3 rounded-lg hidden lg:block p-2 ">
-                <div class="rounded-lg ">
-                    <h1 class="font-bold mb-4">Have Coupon?</h1>
-                    <input id="couponcode1" type="text" placeholder="Coupon Code" class="input input-bordered h-9 w-8/12 max-w-xs rounded-e-none"/>
-                    <button id="coupon1" class="bg-[#E527B2]  text-white rounded-s-none h-9 ml-[-5px] w-2/6 rounded-lg">Apply</button>
-                    <div class="text-xl">
-                    <ol class="list-decimal list-inside p-3 list" id="list">
-                        <li>Home Cooker</li>
-                        <li>Sports cates</li>
-                        <li>Home Cooker</li>
-                    </ol>
-                    <div class="p-3">
-                        <p>Total Price:<span id="total-price" class="text-gray-400">0.00</span></p>
-                        <p>Discount:<span id="discount"  class="text-gray-400">0.00</span></p>
-                        <p>Total:<span id="grand-total"  class="text-gray-400">0.00</span></p>
-                    </div>
-                  </div>
-                  <button id="payment1" class="bg-[#E527B2]  text-white  h-9 ml-[-5px] w-full rounded-lg" onclick="my_modal_1.showModal()">Make Payment</button>
+        <h1
+            class="font-semibold text-3xl lg:text-xl text-center lg:text-left md:text-center lg:col-span-3 md:col-span-3">
+            Sportsware</h1>
 
-                    
-<dialog id="my_modal_1" class="modal">
-  <form method="dialog" class="modal-box flex flex-col items-center justify-center">
-    <img src="images/congo.png"/>
-    <h3 class="font-bold text-lg">Congratulations!</h3>
-    <p class="py-4">You Make the Payment</p>
-    <div class="modal-action">
-      <!-- if there is a button in form, it will close the modal -->
-      <button class="btn" onclick="resetAll()">Close</button>
+
+        <!-- First Card -->
+        <div id="sports-1" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none cursor-pointer"
+            onclick="cardClicked('sports-1')">
+            <figure class="px-10 pt-10 bg-gray-200 h-52">
+                <img src="/images/prod4.png" alt="Shoes" class="pb-2" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <div>
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                </div>
+                <h2 class="card-title">Sports back cap</h2>
+                <div class="card-actions">
+                    <p class="text-gray-400"><span class="rate">44.00</span> Tk</p>
+                </div>
+            </div>
+        </div>
+        <!-- Second Card -->
+        <div id="sports-2" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none cursor-pointer"
+            onclick="cardClicked('sports-2')">
+            <figure class="px-10 pt-10 bg-gray-200 h-52">
+                <img src="/images/prod5.png" alt="Shoes" class="pb-2" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <div>
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-solid fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                </div>
+                <h2 class="card-title">Full Jersey set</h2>
+                <div class="card-actions">
+                    <p class="text-gray-400"><span class="rate">75.00</span> Tk</p>
+                </div>
+            </div>
+        </div>
+        <!-- Third Card -->
+        <div id="sports-3" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none cursor-pointer"
+            onclick="cardClicked('sports-3')">
+            <figure class="px-10 pt-10 bg-gray-200 h-52">
+                <img src="/images/prod6.png" alt="Shoes" class="pb-2" />
+            </figure>
+            <div class="card-body items-center text-center">
+                <div>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                    <i class="fa-regular fa-star text-yellow-400"></i>
+                </div>
+                <h2 class="card-title">Sports cates</h2>
+                <div class="card-actions">
+                    <p class="text-gray-400"><span class="rate">43.00</span> Tk</p>
+                </div>
+            </div>
+        </div>
+        
     </div>
-  </form>
-</dialog>
+  
+        <div class="lg:row-span-3 md:row-span-3 row-span-3 rounded-lg lg:block p-2 ">
+            <div class="rounded-lg ">
+                <div class="">
 
-
-
+               
+                <h1 class="font-bold mb-4 text-center md:text-left lg:text-left">Have Coupon?</h1>
+                <input id="couponcode1" type="text" placeholder="Coupon Code"
+                    class="border border-gray-300 p-2 h-9 w-8/12 max-w-xs rounded-s-lg rounded-e-none" />
+                <button id="coupon1"
+                    class="bg-[#bbb2ba]  text-white rounded-s-none  h-9 ml-[-5px] w-2/6 rounded-lg "
+                    disabled>Apply</button>
                 </div>
+                <div class="text-xl">
+
+                    <ol class="list-decimal list-inside p-3 list" id="list">
+
+                    </ol>
+                    <hr>
+                    <div class="p-3 text-center lg:text-start md:text-start">
+                        <p>Total Price :<span id="total-price" class="text-gray-400  pl-1">0.00</span></p>
+                        <p>Discount :<span id="discount" class="text-gray-400 pl-1">0.00</span></p>
+                        <p>Total :<span id="grand-total" class="text-gray-400  pl-1">0.00</span></p>
+                        <hr>
+                    </div>
+                </div>
+                <button id="payment1" class="bg-[#bbb2ba]  text-white  h-9 mx-0.5 w-full rounded-lg"
+                    onclick="my_modal_1.showModal()">Make Payment</button>
+
+
+                <dialog id="my_modal_1" class="modal">
+                    <form method="dialog" class="modal-box flex flex-col items-center justify-center">
+                        <img src="images/congo.png" />
+                        <h3 class="font-bold text-lg">Congratulations!</h3>
+                        <p class="py-4">You Make the Payment</p>
+                        <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn" onclick="resetAll()">Go Home</button>
+                        </div>
+                    </form>
+                </dialog>
+
             </div>
-       
-
-            <h1 class="font-semibold text-3xl lg:text-xl text-center lg:text-left md:text-center lg:col-span-3">Sportsware</h1>
-
-
-                <!-- First Card -->
-                <div id="sports-1" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none"  onclick="cardClicked('sports-1')">
-                    <figure class="px-10 pt-10 bg-gray-200 h-52">
-                        <img src="/images/prod4.png" alt="Shoes" class="pb-2" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <div>
-                            <i class="fa-solid fa-star text-yellow-400"></i>
-                            <i class="fa-solid fa-star text-yellow-400"></i>
-                            <i class="fa-solid fa-star text-yellow-400"></i>
-                            <i class="fa-regular fa-star text-yellow-400"></i>
-                            <i class="fa-regular fa-star text-yellow-400"></i>
-                        </div>
-                        <h2 class="card-title">Sports back cap</h2>
-                        <div class="card-actions">
-                           <p class="text-gray-400"><span class="rate">44.00</span> Tk</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Second Card -->
-                <div id="sports-2" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none"  onclick="cardClicked('sports-2')">
-                    <figure class="px-10 pt-10 bg-gray-200 h-52">
-                        <img src="/images/prod5.png" alt="Shoes" class="pb-2" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <div>
-                            <i class="fa-solid fa-star text-yellow-400"></i>
-                            <i class="fa-solid fa-star text-yellow-400"></i>
-                            <i class="fa-solid fa-star text-yellow-400"></i>
-                            <i class="fa-regular fa-star text-yellow-400"></i>
-                            <i class="fa-regular fa-star text-yellow-400"></i>
-                        </div>
-                        <h2 class="card-title">Full Jersey set</h2>
-                        <div class="card-actions">
-                           <p class="text-gray-400"><span class="rate">75.00</span> Tk</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Third Card -->
-                <div id="sports-3" class="card  bg-base-100 shadow-xl bg-white p-4 rounded-none" onclick="cardClicked('sports-3')">
-                    <figure class="px-10 pt-10 bg-gray-200 h-52">
-                        <img src="/images/prod6.png" alt="Shoes" class="pb-2" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <div>
-                            <i class="fa-regular fa-star text-yellow-400"></i>
-                            <i class="fa-regular fa-star text-yellow-400"></i>
-                            <i class="fa-regular fa-star text-yellow-400"></i>
-                            <i class="fa-regular fa-star text-yellow-400"></i>
-                            <i class="fa-regular fa-star text-yellow-400"></i>
-                        </div>
-                        <h2 class="card-title">Sports cates</h2>
-                        <div class="card-actions">
-                           <p class="text-gray-400"><span class="rate">43.00</span> Tk</p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="bg-base-100 row-span-1 rounded-lg block lg:hidden md:hidden mx-3">
-                    <div class="rounded-lg ">
-                        <h1 class="font-bold mb-4">Have Coupon?</h1>
-                        <input type="text" placeholder="Coupon Code" class="input input-bordered h-9 w-8/12 max-w-xs rounded-e-none" />
-                        <button id="coupon2" class="bg-[#E527B2]  text-white rounded-s-none h-9 ml-[-5px] w-2/6 rounded-lg">Apply</button>
-                        <div class="text-xl">
-                        <ol class="list-decimal list-inside p-3 list" id="list">
-                            <li>Home Cooker</li>
-                            <li>Sports cates</li>
-                            <li>Home Cooker</li>
-                        </ol>
-                        <div class="p-3">
-                            <p>Total Price:<span id="total-price" class="text-gray-400"> 908.99</span></p>
-                            <p>Discount:<span id="discount"  class="text-gray-400"> 908.99</span></p>
-                            <p>Total:<span id="grand-total"  class="text-gray-400"> 908.99</span></p>
-                        </div>
-                      </div>
-                      <button id="payment2" class="bg-[#E527B2]  text-white h-9 ml-[-5px] w-full rounded-lg">Make Payment</button>
-                    </div>
-                </div>
-
-
-         
-            </div>
-
-     
-
+        </div>
+  
+</div>
         
     </section>
-
-
-
-
-
 
     <script src="sales.js"></script>
 </body>
